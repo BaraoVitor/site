@@ -1,0 +1,81 @@
+/* todo o site */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.site_todo{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Estilo do cabeçalho */
+.logo{
+    color: white;
+}
+
+header{
+    padding: 40px 4%;
+}
+
+header > .site_todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*
+.nave a{
+    color: rgb(91, 10, 255);
+    text-decoration: none;
+    display: inline-block;
+ }
+
+.nave a:hover{
+    color: #fff;
+    transform: scale(2);
+
+ }
+*/
+header nav li{
+    list-style-type: none;
+    display:inline-block;
+    padding: 20px;
+ }
+/**/
+nav a{
+  position: relative;
+  font-size: 1.1rem;
+  color: rgb(51, 58, 75);
+  text-decoration: none;
+  padding: 6px 20px;
+  transition: .5s;
+}
+
+nav a:hover {
+  color:aqua;
+}
+
+nav a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(13, 162, 255);
+  z-index: -1;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  transform: scale(0) translateY(50px);
+  transition: .5s;
+}
+
+nav a:hover span {
+  transform: scale(1) translate(0);
+}
